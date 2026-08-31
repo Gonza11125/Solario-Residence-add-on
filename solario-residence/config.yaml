@@ -1,7 +1,7 @@
 name: Solario Residence
-version: "0.1.0"
+version: "0.2.0"
 slug: solario_residence
-description: Energy management preview for apartment buildings and residential communities
+description: Local integration and cloud bridge for apartment-building energy management
 url: https://solario.cloud
 arch:
   - aarch64
@@ -11,11 +11,11 @@ webui: http://[HOST]:[PORT:3000]
 ports:
   3000/tcp: null
 ports_description:
-  3000/tcp: Optional direct LAN preview access (disabled by default)
+  3000/tcp: Optional direct LAN administration access (disabled by default)
 startup: application
 boot: auto
 stage: experimental
-backup: cold
+backup: hot
 ingress: true
 ingress_port: 8099
 ingress_entry: /
@@ -27,9 +27,13 @@ options:
   log_level: info
   cloud_url: https://solario.cloud
   sync_interval: 15
+  residence_name: Moje rezidence
+  local_site_id: local-site
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)
   cloud_url: url
   sync_interval: int(5,300)
+  residence_name: str
+  local_site_id: str
 environment:
   NODE_ENV: production
