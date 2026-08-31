@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.3
+
+- Fixed Residence frontend API requests under Home Assistant Ingress so they stay inside the add-on instead of being sent to the Home Assistant root API.
+- Kept direct LAN access using the same local `/api` endpoints.
+- Added regression coverage for Ingress URLs with and without a trailing slash.
+
 ## 0.2.2
 
 - Removed the Rezidence Javorová demo dataset from the production frontend bundle.
