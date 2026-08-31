@@ -14,6 +14,6 @@ Then install **Solario Residence**.
 
 ## Current release
 
-Version **0.2.0** is the first functional Residence integration foundation. It reads Home Assistant entities through the protected Home Assistant API, supports persistent Residence configuration and unit/meter mapping, and can activate and synchronize a Residence site with `solario.cloud`.
+Solario Residence 0.2.2 is a functional experimental Residence bridge. It reads real Home Assistant entities through the Supervisor API, lets an administrator map the building's actual PV, consumption, grid, battery and apartment meters, stores configuration persistently, and can pair the installation with Solario Cloud.
 
-The Home Assistant/Supervisor credential stays local to the add-on and is not exported to Solario Cloud.
+The production UI does not substitute a demo building or sample measurements. Unconfigured or unavailable measurements are shown as unavailable until real entities are mapped.
