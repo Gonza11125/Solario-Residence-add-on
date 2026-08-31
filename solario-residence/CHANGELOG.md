@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.2
+
+- Removed the Rezidence Javorová demo dataset from the production frontend bundle.
+- Removed the automatic demo fallback when the local Residence runtime cannot be reached.
+- The dashboard now waits for real Home Assistant data and keeps only the last real snapshot during a temporary runtime outage.
+- Unmapped or unavailable Home Assistant measurements are displayed as unavailable instead of being presented as measured zeroes.
+- Apartment consumption rankings now require real mapped meter values.
+- Updated public documentation for the real Home Assistant mapping and Cloud pairing workflow.
+
 ## 0.2.1
 
 - Fixed a crash when Home Assistant Ingress requests the app root as `//`.
