@@ -1,0 +1,35 @@
+name: Solario Residence
+version: "0.1.0"
+slug: solario_residence
+description: Energy management preview for apartment buildings and residential communities
+url: https://solario.cloud
+arch:
+  - aarch64
+  - amd64
+image: ghcr.io/gonza11125/solario-residence
+webui: http://[HOST]:[PORT:3000]
+ports:
+  3000/tcp: null
+ports_description:
+  3000/tcp: Optional direct LAN preview access (disabled by default)
+startup: application
+boot: auto
+stage: experimental
+backup: cold
+ingress: true
+ingress_port: 8099
+ingress_entry: /
+panel_icon: mdi:office-building-cog
+panel_title: Solario Residence
+panel_admin: true
+homeassistant_api: true
+options:
+  log_level: info
+  cloud_url: https://solario.cloud
+  sync_interval: 15
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  cloud_url: url
+  sync_interval: int(5,300)
+environment:
+  NODE_ENV: production
