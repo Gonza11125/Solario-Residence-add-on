@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+- Fixed a crash when Home Assistant Ingress requests the app root as `//`.
+- Added request-target normalization for double-slash Ingress asset and API paths.
+- Added a regression test for the exact `ERR_INVALID_URL` failure seen on Home Assistant.
+
 ## 0.2.0
 
 - Replaced the static Residence preview with a real Home Assistant add-on runtime.
