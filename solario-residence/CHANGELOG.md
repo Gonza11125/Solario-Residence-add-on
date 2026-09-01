@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0
+
+- Introduced the shared Solario ecosystem visual language for Residence while preserving the existing Residence layout and information architecture.
+- Added the dark slate Solario navigation shell, amber/orange brand accent and light slate/white workspace.
+- Kept Residence-specific energy-flow, apartment, device and management layouts intact.
+- Kept green as a semantic health/self-energy color, with distinct battery and grid accents.
+- Renamed the visible local surface to Solario Residence Local without changing the technical slug, product type or pairing identity.
+- Includes the Home Assistant Ingress API routing fix from 0.2.3.
+
 ## 0.2.3
 
 - Fixed Residence frontend API requests under Home Assistant Ingress so they stay inside the add-on instead of being sent to the Home Assistant root API.
