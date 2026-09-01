@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.2
+
+- Replaced the temporary Residence checkout/pairing UX with the same partner-key model used by Solario Home.
+- Added one-time `RESIDENCE-...` license key activation for the single paid Residence PRO tier.
+- Home SMART/PRO keys are rejected by Residence and Residence keys are product-isolated in Solario Cloud.
+- Successful activation enables lifetime Residence PRO, links the installation to Solario Residence Cloud and returns a separate one-time Cloud access code.
+- The readable Cloud access code is shown only once; persistent state stores only its scrypt-derived credential.
+- Home Assistant and Supervisor credentials remain local and are never included in the Cloud activation request.
+
 ## 0.3.1
 
 - Made Solario Residence Cloud pairing a visible guided flow in Residence Studio.
