@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1
+
+- Made Solario Residence Cloud pairing a visible guided flow in Residence Studio.
+- Added an explicit generated cloud code step, copy action and button to continue to solario.cloud instead of opening checkout immediately.
+- Added clearer pairing status, Cloud site ID and last synchronization information.
+- Kept Home Assistant and Supervisor credentials local; only the Residence export and cloud device identity are used for synchronization.
+- Kept the existing secure activation backend and automatic completion/polling behavior.
+
 ## 0.3.0
 
 - Introduced the shared Solario ecosystem visual language for Residence while preserving the existing Residence layout and information architecture.
