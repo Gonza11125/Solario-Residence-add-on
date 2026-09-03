@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.4
+
+- Replaced the Local role-preview switch with real, backend-enforced SVJ and Solario Admin authentication.
+- Added separate random recovery codes for SVJ and Solario Admin; plaintext codes are shown only when created and persistent storage contains only scrypt-derived credentials.
+- Added signed HttpOnly Local sessions, login throttling, named/revocable identities and Solario Admin-only access to technical configuration, mapping and service operations.
+- Added optional passkey sign-in using Windows Hello, Face ID, Touch ID or device PIN on secure origins; the server stores only the public passkey material and the recovery code remains available as a fallback.
+- Restricted first Local credential bootstrap to the Home Assistant ingress administration surface and prevented public auth status from disclosing identity names or roles.
+
 ## 0.3.3
 
 - Increased undersized Residence labels, status text, chart annotations, device details and configuration hints for better readability.
