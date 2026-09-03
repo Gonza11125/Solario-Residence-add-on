@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.5
+
+- Replaced the visible apartment navigation with a new read-only Automations view while keeping apartment/unit code and stored configuration available for future use.
+- Added a role-gated Residence automation endpoint backed only by real Home Assistant `automation.*` entities.
+- Shows enabled/disabled state, availability, currently running executions, `last_triggered`, execution mode and last Home Assistant update.
+- Added a nullable automation data model for last action, stop time, run duration, daily run count, saved energy and CZK savings; unsupported values remain empty instead of being estimated.
+- Added a minimal last-known activity entry only when Home Assistant supplies a real trigger timestamp, with no controls for starting, stopping or modifying automations.
+
 ## 0.3.4
 
 - Replaced the Local role-preview switch with real, backend-enforced SVJ and Solario Admin authentication.
@@ -25,8 +33,8 @@
 
 ## 0.3.1
 
-- Made Solario Residence Cloud pairing a visible guided flow in Residence Studio.
-- Added an explicit generated cloud code step, copy action and button to continue to solario.cloud instead of opening checkout immediately.
+- Made Residence Cloud connection a clear, user-driven code flow in Residence Studio.
+- Added an explicit generated cloud code step, copy action and button to continue to Solario Residence Cloud instead of opening checkout immediately.
 - Added clearer pairing status, Cloud site ID and last synchronization information.
 - Kept Home Assistant and Supervisor credentials local; only the Residence export and cloud device identity are used for synchronization.
 - Kept the existing secure activation backend and automatic completion/polling behavior.
