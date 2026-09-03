@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.3
+
+- Increased undersized Residence labels, status text, chart annotations, device details and configuration hints for better readability.
+- Raised the smallest 8–10 px secondary text to an approximately 11–12 px readability floor while keeping primary values, layout and Residence visual design unchanged.
+- Applied the same readability pass to Residence Studio, entity mapping, runtime facts and one-time activation-code guidance.
+
 ## 0.3.2
 
 - Replaced the temporary Residence checkout/pairing UX with the same partner-key model used by Solario Home.
