@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.6
+
+- Hid the legacy apartment/unit surface from the current Residence product UI while preserving all stored unit data and runtime support for future use.
+- Removed the apartment consumption widget from the default and persisted visible dashboard configuration.
+- Hid the unit editor from Residence Studio so apartments no longer appear in normal Local or Solario Admin web views.
+
 ## 0.3.5
 
 - Replaced the visible apartment navigation with a new read-only Automations view while keeping apartment/unit code and stored configuration available for future use.
