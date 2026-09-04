@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.7
+
+- Added a separate read-only Residence automation snapshot sync from Local to Solario Residence Cloud.
+- Cloud automation transport sends only sanitized `automation.*` observability fields already exposed by Residence Local; it does not expose Home Assistant credentials or control actions.
+- Unsupported stop time, duration, action, daily count, energy and CZK savings remain null instead of being estimated.
+- Automation sync failure is isolated from the existing energy synchronization so it cannot interrupt normal Residence Cloud telemetry.
+
 ## 0.3.6
 
 - Hid the legacy apartment/unit surface from the current Residence product UI while preserving all stored unit data and runtime support for future use.
