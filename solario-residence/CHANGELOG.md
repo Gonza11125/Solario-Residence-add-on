@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.8
+
+- Redesigned the Residence Local overview, Energy, Devices and Analytics pages for a denser but clearer dashboard layout.
+- Kept all visible values tied to real Home Assistant/runtime data; unavailable measurements remain empty instead of being replaced with demo values.
+- Added clearer local system, battery, energy-flow and device status blocks so the add-on does not feel empty when only a limited set of entities is mapped.
+- Added visible locked Solario Cloud feature previews for long-term history, forecasting, advanced analytics, device diagnostics and unit comparison without exposing any fake cloud data.
+- Preserved the existing dark Solario navigation shell and light Residence workspace while improving responsive behavior on tablet and mobile layouts.
+
 ## 0.3.7
 
 - Added a separate read-only Residence automation snapshot sync from Local to Solario Residence Cloud.
@@ -46,8 +54,8 @@
 
 ## 0.3.1
 
-- Made Residence Cloud connection a clear, user-driven code flow in Residence Studio.
-- Added an explicit generated cloud code step, copy action and button to continue to Solario Residence Cloud instead of opening checkout immediately.
+- Made Solario Residence Cloud pairing a visible guided flow in Residence Studio.
+- Added an explicit generated cloud code step, copy action and button to continue to solario.cloud instead of opening checkout immediately.
 - Added clearer pairing status, Cloud site ID and last synchronization information.
 - Kept Home Assistant and Supervisor credentials local; only the Residence export and cloud device identity are used for synchronization.
 - Kept the existing secure activation backend and automatic completion/polling behavior.
