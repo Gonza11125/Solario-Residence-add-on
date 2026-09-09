@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0
+
+- Introduced the new Solario Pulse visual system across Přehled, Energie, Zařízení, Analytika and Upozornění, based on the approved Residence Local concept.
+- Added locally bundled Residence, solar, battery and grid illustrations that work behind Home Assistant Ingress without relying on external image URLs.
+- Kept all displayed energy values grounded in the actual Residence runtime and mapped Home Assistant entities; missing measurements remain unavailable instead of being replaced with demo or estimated numbers.
+- Improved missing-data states so unavailable values explain whether they are waiting for mapping, measurement or a verified calculation.
+- Restyled Automations to match the new visual language without decorative photo backgrounds; Solario Admin controls still operate the real Home Assistant automations while SVJ remains read-only.
+- Kept the Solario Admin Správa / Residence Studio configuration experience unchanged.
+- Added responsive layouts for the new Pulse surfaces on tablet and mobile.
+
 ## 0.3.9
 
 - Added local Home Assistant automation controls for authenticated Solario Admin users: turn on, turn off and manual trigger.
