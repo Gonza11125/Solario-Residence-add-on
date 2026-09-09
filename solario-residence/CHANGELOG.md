@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.1
+
+- Rebuilt the customer-facing Residence Local desktop UI against the approved 1672×941 reference screens instead of using them only as loose visual inspiration.
+- Matched the reference proportions and compositions for Overview / Solario Pulse, Energy, Devices, Analytics, Alerts and Automations, including the compact 232 px navigation rail and 50 px top bar.
+- Reworked Energy, Devices, Analytics and Alerts structures so the visible cards, flow panels, status blocks and Solario Cloud previews follow the approved screen hierarchy.
+- Rebuilt the SVJ automation screen into the approved read-only card layout with search and state filtering; Solario Admin keeps the existing real Home Assistant controls.
+- Kept Residence Studio / Správa unchanged for the Solario Admin account.
+- Preserved the real-data-only contract: measurements, device states, alerts and automation values continue to come from Home Assistant / Residence runtime and unavailable values remain unavailable instead of being fabricated.
+
 ## 0.4.0
 
 - Introduced the new Solario Pulse visual system across Přehled, Energie, Zařízení, Analytika and Upozornění, based on the approved Residence Local concept.
