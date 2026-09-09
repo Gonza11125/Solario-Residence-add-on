@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.9
+
+- Added local Home Assistant automation controls for authenticated Solario Admin users: turn on, turn off and manual trigger.
+- Kept the SVJ automation view strictly read-only; backend authorization rejects technical POST actions for SVJ even if a request is crafted manually.
+- Automation actions are sent directly to Home Assistant and the visible state is re-read from Home Assistant after the command instead of being updated optimistically.
+- If a post-action verification read fails, Residence does not invent a resulting state.
+- Preserved the real-data contract for all automation metrics: unsupported duration, action, daily count, energy and CZK savings remain `null` / `—`.
+
 ## 0.3.8
 
 - Redesigned the Residence Local overview, Energy, Devices and Analytics pages for a denser but clearer dashboard layout.
