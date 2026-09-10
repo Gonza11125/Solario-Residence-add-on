@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.4.6
+
+- Replaced the old compressed four-quadrant scenic sprite with dedicated sharp reference assets and refined vector scenes so Residence imagery no longer appears blurred, stretched or mixed between cards.
+- Added a final reference-match stylesheet loaded after the older design layers, with customer-facing geometry calibrated to the approved 1672 × 941 screens for Přehled, Energie, Automatizace, Zařízení, Analytika and Upozornění.
+- Rebuilt the Solario Pulse and current-energy-flow presentation around the approved compositions while keeping the numeric labels and states live from Residence runtime / mapped Home Assistant entities.
+- Refined solar, battery, grid and residence scenes, card proportions, status blocks, typography, spacing and automation icon hierarchy to more closely follow the approved visual references.
+- Corrected the overview fourth daily metric to „Úspora emisí“ and leaves it unavailable until a real emissions calculation exists instead of reusing financial savings under the wrong label.
+- Removed the old `reference-visuals.css` import so the obsolete embedded sprite cannot override the new sharp presentation layer.
+- Preserved the real-data-only contract: missing measurements remain `—` / waiting for mapping or calculation and no demo values are injected.
+- Kept Residence Studio / Správa outside the reference canvas so Solario Admin configuration behavior remains unchanged.
+
+## 0.4.5
+
+- Reworked the six customer-facing Residence Local screens against the supplied native 1672 × 941 reference images instead of adapting the mockups to a separate 1536-specific layout.
+- Added a native reference canvas: desktop customer pages are authored at the exact 1672 px reference width and proportionally scaled to the actual Home Assistant ingress viewport, keeping sidebar width, typography, gaps, card heights and scenic panels in the same proportions as the approved mockups.
+- Removed the later 1536-specific override that changed the approved 232 px navigation rail and other reference geometry.
+- Kept all values, device states, alerts and automations connected to Residence runtime / mapped Home Assistant entities; the visual layer does not fabricate measurements.
+- Kept Residence Studio / Správa outside the reference canvas so Solario Admin configuration behavior remains unchanged.
+
 ## 0.4.4
 
 - Calibrated the six Residence Local customer screens directly against the supplied 1536 × 864 reference images.
@@ -96,8 +115,8 @@
 - Added one-time `RESIDENCE-...` license key activation for the single paid Residence PRO tier.
 - Home SMART/PRO keys are rejected by Residence and Residence keys are product-isolated in Solario Cloud.
 - Successful activation enables lifetime Residence PRO, links the installation to Solario Residence Cloud and returns a separate one-time Cloud access code.
-- The readable Cloud access code is shown only once; persistent state stores only its scrypt-derived credential.
 - Home Assistant and Supervisor credentials remain local and are never included in the Cloud activation request.
+- The readable Cloud access code is shown only once; persistent state stores only its scrypt-derived credential.
 
 ## 0.3.1
 
