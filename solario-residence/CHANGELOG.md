@@ -1,3 +1,12 @@
+## 0.4.7
+
+- Restore the approved scenic artwork on all six Residence Local screens.
+- Match page-specific sidebar widths, typography, card geometry and icon colors.
+- Bundle Czech-capable fonts for consistent rendering without an external font service.
+- Fix the distribution-grid card inheriting an unrelated grid layout.
+- Keep sensor values and availability live; show missing values as dashes.
+- Retain mobile layouts, automation filters and admin-only controls.
+
 # Changelog
 
 ## 0.4.6
@@ -174,3 +183,4 @@
 - Added responsive dashboard, energy, apartments, devices, analytics and alerts screens.
 - Added role previews and the initial Residence Studio configuration interface.
 - Added pre-built image metadata for `amd64` and `aarch64` Home Assistant systems.
+
