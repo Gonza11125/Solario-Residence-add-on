@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.3
+
+- Corrected the customer-facing stylesheet stack so the dedicated reference-match layers are actually loaded in production.
+- Removed the later scaling override that caused the 0.4.2 Home Assistant UI to render too small and leave excessive empty space.
+- Restored the approved 1672×941 desktop proportions for Přehled / Solario Pulse, Energie, Zařízení, Analytika, Upozornění and Automatizace.
+- Kept scenic visuals as a presentation layer only; all displayed measurements and states still come from Residence runtime / mapped Home Assistant entities.
+- Kept automation rows free of decorative photos and left Solario Admin Správa / Residence Studio behavior unchanged.
+
 ## 0.4.2
 
 - Restored the approved full-size Residence Local desktop composition after the 0.4.1 scaling regression made cards, typography and graphs appear too small.
@@ -20,13 +28,9 @@
 
 ## 0.4.0
 
-- Introduced the new Solario Pulse visual system across Přehled, Energie, Zařízení, Analytika and Upozornění, based on the approved Residence Local concept.
-- Added locally bundled Residence, solar, battery and grid illustrations that work behind Home Assistant Ingress without relying on external image URLs.
-- Kept all displayed energy values grounded in the actual Residence runtime and mapped Home Assistant entities; missing measurements remain unavailable instead of being replaced with demo or estimated numbers.
-- Improved missing-data states so unavailable values explain whether they are waiting for mapping, measurement or a verified calculation.
-- Restyled Automations to match the new visual language without decorative photo backgrounds; Solario Admin controls still operate the real Home Assistant automations while SVJ remains read-only.
-- Kept the Solario Admin Správa / Residence Studio configuration experience unchanged.
-- Added responsive layouts for the new Pulse surfaces on tablet and mobile.
+- Introduced the Solario Pulse visual direction across the Residence Local customer-facing pages.
+- Added new Residence energy scenery and richer local dashboard presentations while retaining live Home Assistant data sources.
+- Preserved Solario Admin technical configuration and the no-demo-data production contract.
 
 ## 0.3.9
 
