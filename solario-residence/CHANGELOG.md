@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.4
+
+- Calibrated the six Residence Local customer screens directly against the supplied 1536 × 864 reference images.
+- Corrected the desktop navigation rail, workspace offsets, card heights and vertical rhythm so the full compositions fit the Home Assistant panel at the intended scale.
+- Added per-screen sizing for Overview, Energy, Devices, Analytics, Alerts and Automations while preserving the existing tablet/mobile layout and Solario Admin Studio.
+- Kept all energy values, device states, alerts and automations connected to Residence runtime / mapped Home Assistant entities; no sample measurements were introduced.
+
 ## 0.4.3
 
 - Corrected the customer-facing stylesheet stack so the dedicated reference-match layers are actually loaded in production.
