@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.2
+
+- Restored the approved full-size Residence Local desktop composition after the 0.4.1 scaling regression made cards, typography and graphs appear too small.
+- Increased the visual scale across Přehled / Solario Pulse, Energie, Zařízení, Analytika, Upozornění and Automatizace so the interface uses the available Home Assistant viewport more naturally.
+- Added the final locally bundled scenic visual layer for Residence, solar, battery and grid surfaces without relying on external image URLs.
+- Kept automation rows free of decorative photographs and left Solario Admin Správa / Residence Studio unchanged.
+- Preserved the real-data-only contract: displayed measurements continue to come from Residence runtime / mapped Home Assistant entities and unavailable values remain unavailable instead of being fabricated.
+- Published and verified the multi-architecture Home Assistant image for amd64 and aarch64, including anonymous pull access.
+
 ## 0.4.1
 
 - Rebuilt the customer-facing Residence Local desktop UI against the approved 1672×941 reference screens instead of using them only as loose visual inspiration.
