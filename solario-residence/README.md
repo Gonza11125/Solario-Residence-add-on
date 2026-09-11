@@ -9,3 +9,4 @@ Version 0.4.4 provides the complete Solario Residence Local interface for overvi
 The dashboard uses only the configured installation's real data. If a value is not mapped or its entity is unavailable, the UI shows it as unavailable instead of filling in a sample number.
 
 The app is distributed as a pre-built container image for `amd64` and `aarch64`. Internal source code is not included in this installation repository.
+

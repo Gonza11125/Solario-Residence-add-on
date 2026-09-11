@@ -17,3 +17,4 @@ Then install **Solario Residence**.
 Solario Residence 0.2.2 is a functional experimental Residence bridge. It reads real Home Assistant entities through the Supervisor API, lets an administrator map the building's actual PV, consumption, grid, battery and apartment meters, stores configuration persistently, and can pair the installation with Solario Cloud.
 
 The production UI does not substitute a demo building or sample measurements. Unconfigured or unavailable measurements are shown as unavailable until real entities are mapped.
+

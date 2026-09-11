@@ -1,3 +1,11 @@
+## 0.4.8
+
+- Preserve original artwork pixel-for-pixel with lossless WebP encoding; remove the previous lossy compression.
+- Prevent automatic enlargement above the native 1672 px reference width and center the interface on wider screens.
+- Restore device and alert summary captions, use crisp SVG section/detail icons, and correct automation icon selection.
+- Show waiting status instead of a live-data badge when an energy measurement is unavailable.
+- Preserve live readings, role restrictions, and responsive layouts.
+
 ## 0.4.7
 
 - Restore the approved scenic artwork on all six Residence Local screens.
