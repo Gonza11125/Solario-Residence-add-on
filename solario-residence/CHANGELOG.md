@@ -1,3 +1,12 @@
+## 0.4.10
+
+- Replace the fixed, scaled desktop canvas with a full-width responsive layout for wide monitors, tablets and phones.
+- Render scenic artwork independently of live text and adapt device illustrations to card width.
+- Complete device dialogs, project information, data-source and component lists, help and history-period explanations.
+- Add expandable automation details and recorded event history, usable with touch and keyboard.
+- Add accessible modal focus management, Escape/backdrop dismissal and scroll locking.
+- Preserve real-data-only readings and existing SVJ/admin permissions.
+
 ## 0.4.9
 
 - Remove unnecessary scrolling into empty space beneath Residence tabs by sizing the canvas to the actual viewport and content.
