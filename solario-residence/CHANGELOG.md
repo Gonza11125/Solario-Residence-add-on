@@ -1,3 +1,8 @@
+## 0.4.9
+
+- Remove unnecessary scrolling into empty space beneath Residence tabs by sizing the canvas to the actual viewport and content.
+- Correct viewport-height calculations for scaled layouts and keep sidebar navigation reachable in short windows.
+
 ## 0.4.8
 
 - Preserve original artwork pixel-for-pixel with lossless WebP encoding; remove the previous lossy compression.
