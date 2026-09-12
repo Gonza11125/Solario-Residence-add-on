@@ -1,3 +1,12 @@
+## 0.4.12
+
+- Replace screenshot fragments with clean high-resolution scenic backgrounds and clipped reference illustrations.
+- Refine Overview, Energy, Analytics and Alerts proportions while preserving full-width desktop and mobile layouts.
+- Load actual daily power history from Home Assistant Recorder; preserve unavailable readings as gaps.
+- Refresh current readings every five seconds and when returning to the app, without overlapping requests.
+- Keep open device, project, component and source details current; report disconnection instead of showing stale values as live.
+- Show the successful data-check time separately from sensor change timestamps and include mapped daily/SOC sources in diagnostics.
+
 ## 0.4.10
 
 - Replace the fixed, scaled desktop canvas with a full-width responsive layout for wide monitors, tablets and phones.

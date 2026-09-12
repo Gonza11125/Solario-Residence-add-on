@@ -30,4 +30,3 @@ Home Assistant will offer an update after this repository publishes a newer vers
 ## Security
 
 Do not post credentials, access codes, tokens, private addresses or detailed security reports in public issues. Report suspected security issues privately.
-
