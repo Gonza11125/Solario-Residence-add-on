@@ -1,3 +1,11 @@
+## 0.4.13
+
+- Clear obsolete automation state after failed refreshes; retry without overlapping polls and reject late responses.
+- Validate measurement units before displaying kW, kWh or battery percentages; keep invalid values unavailable.
+- Derive battery availability from all mapped battery measurements.
+- Reject invalid Home Assistant state responses and clear unit readings on disconnect.
+- Keep unknown automation run counts unavailable instead of displaying zero or a claimed idle state.
+
 ## 0.4.12
 
 - Replace screenshot fragments with clean high-resolution scenic backgrounds and clipped reference illustrations.
