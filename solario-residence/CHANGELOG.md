@@ -1,3 +1,13 @@
+## 0.5.0
+
+- Add daily economics: map the grid import and export meters, enter your purchase price, and Residence reports self-consumption, self-sufficiency and today's saving instead of a permanent dash.
+- Add an optional feed-in price so the saving can include what the grid pays for surplus production.
+- Open the Byty section to the SVJ account, with a working search and each unit's share of today's measured consumption.
+- Propose grid import and export meters separately during entity discovery, so a meter is never mapped in the opposite direction.
+- Name the measurement in Czech when a mapped source stops reporting, instead of showing the internal key.
+- Migrate a layout stored by an earlier release so the newly available Byty section appears there too.
+- Keep the real-data-only contract: an unset price or an unmapped meter leaves the figure unavailable, and a reading that contradicts the rest of the day is reported as missing rather than estimated.
+
 ## 0.4.13
 
 - Clear obsolete automation state after failed refreshes; retry without overlapping polls and reject late responses.
