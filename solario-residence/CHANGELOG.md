@@ -1,3 +1,16 @@
+## 0.5.1
+
+- Show each flat's consumption since midnight. An apartment meter is usually a lifetime counter, and its whole reading (thousands of kWh) was shown as today's figure; today's energy of every mapped counter is now its growth since local midnight from the Home Assistant Recorder, with resets counted. A daily sensor still works as before.
+- Make Byty editable again: the unit editor in Správa had been left hidden, so no flat could be added. Units now also take a floor and an area, and a unit without them no longer reads "0. patro, 0 m²".
+- Never lose a saved setting: the cloud sync, Residence PRO activation and Správa no longer each write their own copy of the state, which could put back the state from before a saved mapping, price, unit or activation. The state file is written only when it changes, not every few seconds.
+- Keep the background refresh in Správa from overwriting an edit that is still being saved, and refresh the other pages right after a save.
+- Add grid and battery direction settings, with a suggestion from the house's power balance; show "Nabíjí / Vybíjí", "Odběr / Přetok" and "Bez toku" instead of a bare signed number.
+- Date alerts by when the problem started, in the residence's time, instead of a raw timestamp that changed on every refresh; report a flat meter that sends no usable data.
+- Count today's runs of each automation from the Recorder and list them; drop fields Home Assistant never provides instead of showing a permanent dash.
+- Replace the always-empty "Úspora emisí" on the overview with today's saving, lay the daily summary out two by two so values are not cut off, show "Stav technologií" when it is switched on, and put chart times on whole hours.
+- Reject an unknown time zone instead of breaking every page; keep Správa from being switched off, which locked the administrator out.
+- Keep a mapped entity visible in Správa even when discovery does not propose it.
+
 ## 0.5.0
 
 - Add daily economics: map the grid import and export meters, enter your purchase price, and Residence reports self-consumption, self-sufficiency and today's saving instead of a permanent dash.
