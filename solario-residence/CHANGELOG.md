@@ -1,3 +1,9 @@
+## 0.5.2
+
+- Read the exact value anywhere on the production and consumption chart: a crosshair snaps to the nearest reading and shows the time with both values. It works with a mouse, by tapping on a phone, and with the arrow keys.
+- Edit the overview right on the page as Solario Admin: "Upravit stránku" lets you reorder cards, make them narrow, half or full width, rename them, hide or show them, and change the page heading and subtitle. Changes are saved at once and everyone sees them; "Obnovit výchozí" brings the original layout back. SVJ sees the result, not the editor.
+- Every card of the overview is now one of these widgets, including Objekt, data availability and the Cloud cards. A new optional card, "Spotřeba bytů dnes", ranks the flats by today's consumption.
+
 ## 0.5.1
 
 - Show each flat's consumption since midnight. An apartment meter is usually a lifetime counter, and its whole reading (thousands of kWh) was shown as today's figure; today's energy of every mapped counter is now its growth since local midnight from the Home Assistant Recorder, with resets counted. A daily sensor still works as before.
