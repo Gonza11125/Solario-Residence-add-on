@@ -1,3 +1,9 @@
+## 0.5.3
+
+- One Solario logo everywhere: the sidebar, the sign-in page, the browser tab and the add-on store icon in Home Assistant now use the same logo as Solario Home and the Solario website (the S with the sun).
+- The add-on page in Home Assistant shows the Solario Residence logo (logo.png).
+- On the Energie page the readings in the four energy-flow cards stay on one line; a value like "37,9 kW" no longer wraps into the label and the note.
+
 ## 0.5.2
 
 - Read the exact value anywhere on the production and consumption chart: a crosshair snaps to the nearest reading and shows the time with both values. It works with a mouse, by tapping on a phone, and with the arrow keys.
