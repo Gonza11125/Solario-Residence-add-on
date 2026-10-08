@@ -1,5 +1,5 @@
 name: Solario Residence Local
-version: "0.5.3"
+version: "0.6.0"
 slug: solario_residence
 description: Local integration and cloud bridge for apartment-building energy management
 url: https://solario.cloud
@@ -23,6 +23,9 @@ panel_icon: mdi:office-building-cog
 panel_title: Solario Residence Local
 panel_admin: true
 homeassistant_api: true
+# Only to switch the add-on's own automatic updates on or off with the
+# building's Solario plan; the default Supervisor role, nothing more.
+hassio_api: true
 options:
   log_level: info
   cloud_url: https://solario.cloud

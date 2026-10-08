@@ -1,3 +1,22 @@
+## 0.6.0
+
+- New **Ekonomika** page: what the building's photovoltaics saved and earned, what electricity cost with and without them, where the energy went, the payback of the investment with an outlook for its lifetime, findings worth acting on, records, avoided emissions, a comparison with the period before and the year before, and each flat's share of the solar energy. Choose a day, a month, a year or the whole life of the installation; every period downloads as CSV for Czech Excel.
+- The economics are computed hour by hour from Home Assistant's long-term statistics, back to the commissioning day (at most five years), so the history is there from the first day the add-on runs. Each hour is priced by the price list of that day and the HDO low tariff.
+- **Správa → Ekonomika domu** replaces the single purchase and feed-in price: how the building is connected (one supply point re-billed to the flats, or flats with their own supply points and EDC sharing), simple or detailed price lists valid from a date, HDO hours for weekdays and the weekend, and the investment with subsidies, maintenance and the outlook parameters. The prices entered in earlier releases become the first price list.
+- **Úspora dnes** on the overview is now priced by the same price lists and HDO hours, so it matches the Ekonomika page.
+- **Every page can be edited** by the Solario Admin with **Upravit stránku**: add cards from a library, delete them, drag them into place, set their width, title, settings and who sees them. New cards for your own text, any Home Assistant value and a link. The overview's layout from 0.5.2 is kept.
+- Optional mappings for the battery's charged and discharged energy (kWh) value what the battery did.
+- Faster history: local time is computed without asking the browser's or Node's time-zone database for every hour.
+- New **Tarif** page for the building's Solario plan: **Residence Local** (499 Kč a month; everything stays in the building) and **Residence Cloud** (999 Kč a month; also Solario Residence Cloud on the web). The building pays, so both the SVJ and the Solario Admin see the plan and may change it.
+- Buy a plan right from the add-on: the secure payment page opens, and the plan switches on by itself within about a minute of the payment. There is no trial period.
+- Move up to Residence Cloud at once, or down to Residence Local at the end of the paid period; cancel at the end of the paid period, and take a scheduled change or cancellation back. "Platební karta a faktury" opens the payment provider's page for the card and the invoices.
+- Residence Local keeps its measurements and automations in the building; nothing is sent to Solario Cloud.
+- Without a plan the overview keeps running in the building, but without Solario Cloud, support and automatic updates; a notice says so and leads to the Tarif page. A building whose subscription ended can subscribe again and keeps its Cloud account, history and access code.
+- RESIDENCE PRO keys keep working: they are Residence Cloud without an end, shown as a lifetime licence.
+- Nothing changes until Solario Cloud starts selling Residence plans; until then the add-on runs in full, with support and automatic updates.
+- The add-on asks Solario Cloud for the building's plan every five minutes. When Cloud cannot be reached for six hours, the building is treated as having no plan until Cloud answers again.
+- The add-on now has access to the Home Assistant Supervisor API (default role) only to switch its own automatic updates on or off with the plan.
+
 ## 0.5.3
 
 - One Solario logo everywhere: the sidebar, the sign-in page, the browser tab and the add-on store icon in Home Assistant now use the same logo as Solario Home and the Solario website (the S with the sun).
