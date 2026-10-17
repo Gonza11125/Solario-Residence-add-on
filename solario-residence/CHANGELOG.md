@@ -1,3 +1,14 @@
+## 0.7.0
+
+- New page **Náš dům** for everyone in the building: what the roof makes right now, how much of the building runs on its own energy, today, this month and since it started, the record day and the CO₂ that was not emitted. Savings and the payback only when the building chooses to show money. Only the building as a whole, nothing about any flat.
+- **A display for the entrance**: a TV or tablet in the building's network opens the page without signing in, through a secret link the Solario Admin switches on, replaces or switches off. It shows the cards the building arranged and fills any screen, landscape or portrait.
+- **The add-on watches its own building**: an alert when the roof produces nothing for an hour between ten and two although it did on the days before, and when the building draws far above its usual night for 45 minutes before four. The overview no longer says all is well while one is open.
+- **Residence Cloud keeps the building's economics**: on the Cloud plan the add-on sends Solario Cloud the day-by-day results it computes (production, consumption, the grid, what the roof saved and what electricity cost), so the committee sees the whole history on the web and gets a monthly report by e-mail. Residence Local sends nothing.
+- The Tarif page says what each plan is: Residence Local, the overview in the building, and Residence Cloud, Solario watching the building around the clock with e-mail and phone alerts, all buildings under one account, economics on the web with a monthly report and Náš dům on residents' phones through a QR code. The Cloud cards in the add-on promise only what Residence Cloud does.
+- A clearer look: text contrast checked on every page, one colour per meaning (consumption is blue everywhere), the day's chart drawn at its real width with round steps on the axis, one name for each thing, Czech dates and plurals, larger touch targets and visible keyboard focus. The top bar and the menu work at every width.
+- "Namapování a dostupnost dat" counts the day's energy counters too, so it no longer says all sources are ready while today's production or consumption is missing.
+- Security: the add-on's port trusts only Home Assistant's Ingress proxy for sign-in and setup, the limit on sign-in attempts can no longer be dodged, a new access code ends the sessions of the old one at once, and nothing measured leaves the building until Solario Cloud has confirmed the Residence Cloud plan.
+
 ## 0.6.0
 
 - New **Ekonomika** page: what the building's photovoltaics saved and earned, what electricity cost with and without them, where the energy went, the payback of the investment with an outlook for its lifetime, findings worth acting on, records, avoided emissions, a comparison with the period before and the year before, and each flat's share of the solar energy. Choose a day, a month, a year or the whole life of the installation; every period downloads as CSV for Czech Excel.
