@@ -1,3 +1,17 @@
+## 0.7.1
+
+Every value checked on every page, at noon, at night, in the morning and in summer; what did not agree is fixed.
+
+- **Cena teď** on the Ekonomika page is the price of the tariff that runs at this moment. From half past an hour it mixed in the next band: at 12:30, half an hour before the low tariff, it read 4,71 Kč/kWh instead of 5,99 Kč/kWh, while the bill was priced right.
+- **Records** compare only finished days: today, still running, was always the weakest day, and a day the ledger is missing hours of no longer counts either. They are named after what they compare, *Den s nejvyšším přínosem* and *Den s nejnižším přínosem*, so they do not read against the record production day.
+- **Srovnání** shows a change of self-sufficiency in percentage points: 41 % against 56 % is −15 p. b., not −27 %.
+- **Stav zdrojů** on the alerts page checks the same sources as the overview, the roof and the day's energy counters included; a battery the building does not have is no longer counted as missing.
+- The same number reads the same on every page: one decimal below 100 kWh, no trailing zero on Náš dům and the display (38,9 kW was 39,0 kW there), and a battery at rest is *V klidu* everywhere.
+- *Vlastní využití výroby* is the one name for the share of production used in the building; when the roof has produced nothing yet, it says so instead of waiting for a measurement.
+- Automations: the time since the last run counts whole hours (90 minutes ago is *před hodinou*), the last run is shown when there was none today, and the counts are in proper Czech.
+- Units: floor 0 is *Přízemí*, below it *podzemní podlaží*.
+- Minus signs and plurals: −18 966 Kč without a gap, 1 vzrostlý strom / 2 stromy / 5 stromů.
+
 ## 0.7.0
 
 - New page **Náš dům** for everyone in the building: what the roof makes right now, how much of the building runs on its own energy, today, this month and since it started, the record day and the CO₂ that was not emitted. Savings and the payback only when the building chooses to show money. Only the building as a whole, nothing about any flat.
