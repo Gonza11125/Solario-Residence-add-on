@@ -1,3 +1,10 @@
+## 0.8.1
+
+- **Consumption from the building's balance**: a building without its own consumption sensor, or with one found wrong, now sees its consumption everywhere: on the overview, Energie, Analytika, Náš dům, the display and in the day's chart. Residence balances it from what is measured: production + from the grid − to the grid ± the battery, live and for the day, and says *Dopočteno z výroby a sítě* where it shows it. An inverter's "load" that only repeats production, or its backup output, is no longer needed; the alerts say to remove it in Správa.
+- This needs a meter at the building's grid connection in Home Assistant. Without it the consumption stays empty, and Ekonomika and the overview say what is missing: a meter for the inverter at the grid connection, or a meter with current clamps.
+- Správa explains that consumption need not be mapped when production and the grid are, and the economics no longer ask for a consumption counter then.
+- A building that needs a check because of a wrongly mapped sensor says so, instead of *Některé zdroje dat nejsou dostupné*.
+
 ## 0.8.0
 
 - **Zpráva pro shromáždění**: on the Ekonomika page, one click gives the committee A4 pages to print or save as PDF for the owners' meeting: what the roof produced, how much of the building it covered, what electricity cost with and without it, the benefit, the comparison with the year before, the payback of the investment, the year month by month and every flat's share of the solar energy. In plain sentences an owner reads without the add-on.
