@@ -1,3 +1,9 @@
+## 0.8.3
+
+- SVJ can manage electricity prices directly in Ekonomika → Nastavit ceny: purchase and feed-in prices, monthly fixed payments, dated price lists, HDO and the price of solar energy shared with flats.
+- Price edits are saved on the add-on and immediately refresh the economics. A dedicated price endpoint preserves the current installation model, investment, emission factor and technical configuration.
+- The missing-price-list cards now let SVJ enter the first price list. Technical administration and rebuilding Home Assistant history remain Solario Admin functions.
+
 ## 0.8.2
 
 - Solario Admin can remove optional pages such as Byty from the navigation in Správa → Moduly a stránky. Removing a page preserves its saved cards, settings and underlying apartment and meter data.

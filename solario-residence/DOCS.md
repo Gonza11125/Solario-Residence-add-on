@@ -28,7 +28,9 @@ The **Ekonomika** page shows what the building's photovoltaics saved and earned,
 
 Everything is computed hour by hour from Home Assistant's long-term statistics (the Recorder's hourly totals of the mapped energy counters), so it covers the history from the day the installation was commissioned (at most five years back), not only the time since the add-on was installed. The add-on reads the latest month first and then the older history in the background; the page fills in as it goes. Each hour is priced by the price list in force that day, with the high or low tariff by the HDO schedule; an hour split between the two is priced proportionally.
 
-Set it up in **Správa → Ekonomika domu** (Solario Admin only):
+SVJ and Solario Admin can set electricity prices in **Ekonomika → Nastavit ceny**. This includes dated price lists, purchase and feed-in prices, fixed payments, HDO hours and the price of energy shared with flats. Choose **Uložit ceny** to save them on the add-on and refresh the economics.
+
+Solario Admin configures the building model, investment and history in **Správa → Ekonomika domu**:
 
 1. **Jak je dům připojený**
    - *Jedno odběrné místo pro celý dům*: the building buys electricity and re-bills the flats from their submeters. The solar energy of each hour is divided among the flats by what each used in that hour. Optionally enter what the flats pay the SVJ for a kWh of solar energy; otherwise they pay the grid price and the benefit stays with the building.
