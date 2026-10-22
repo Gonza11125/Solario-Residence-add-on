@@ -1,3 +1,9 @@
+## 0.8.2
+
+- Solario Admin can remove optional pages such as Byty from the navigation in Správa → Moduly a stránky. Removing a page preserves its saved cards, settings and underlying apartment and meter data.
+- Removed pages can be restored from the same administration panel. Přehled and Správa remain protected from removal.
+- Fix the public add-on metadata synchronization to include the existing icon and logo in the strict eight-file allowlist.
+
 ## 0.8.1
 
 - **Consumption from the building's balance**: a building without its own consumption sensor, or with one found wrong, now sees its consumption everywhere: on the overview, Energie, Analytika, Náš dům, the display and in the day's chart. Residence balances it from what is measured: production + from the grid − to the grid ± the battery, live and for the day, and says *Dopočteno z výroby a sítě* where it shows it. An inverter's "load" that only repeats production, or its backup output, is no longer needed; the alerts say to remove it in Správa.
