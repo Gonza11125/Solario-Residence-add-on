@@ -1,3 +1,13 @@
+## 0.8.4
+
+For buildings on Residence Cloud. Solario Cloud has to be updated first; an older Cloud ignores what it does not know.
+
+- **Each flat's history in the Cloud**: every day the add-on sends each flat's consumption, its hourly share of the roof and what that saved. A resident sees their own flat by day and month from the day the building gave it to them; the committee sees any flat.
+- **The economics in the Cloud**: the current price list, HDO and the investment with its payback reach the Cloud's Ekonomika, read-only.
+- **Devices and meters in the Cloud**: the roof, the battery and the grid connection with their state, and each meter as online, offline or found wrong by the mapping check.
+- *Úspora dnes* in the Cloud is priced like the overview in the building; it was always empty there.
+- A building paired with a RESIDENCE PRO key or a finished payment starts sending at once instead of after up to five minutes.
+
 ## 0.8.3
 
 - SVJ can manage electricity prices directly in Ekonomika → Nastavit ceny: purchase and feed-in prices, monthly fixed payments, dated price lists, HDO and the price of solar energy shared with flats.
