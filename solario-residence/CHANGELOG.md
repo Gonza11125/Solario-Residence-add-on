@@ -1,3 +1,11 @@
+## 0.8.5
+
+For buildings on Residence Cloud. Solario Cloud has to be updated first; an older Cloud ignores what it does not know.
+
+- **Revisions and service in the Cloud**: the list from *Revize a servis* with its next dates reaches the Cloud. The committee sees it on the web and gets an e-mail a month before a date and once a date has passed.
+- **The rest of Ekonomika in the Cloud**: production against the supplier's plan for the year and what the economics found this month, the same words as in the building.
+- The Residence Local demo and the Residence Cloud demo show the same revisions.
+
 ## 0.8.4
 
 For buildings on Residence Cloud. Solario Cloud has to be updated first; an older Cloud ignores what it does not know.
