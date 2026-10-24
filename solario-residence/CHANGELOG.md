@@ -1,3 +1,13 @@
+## 0.9.0
+
+**Residence Cloud is this interface, from anywhere.** For buildings on Residence Cloud; Solario Cloud has to be updated first, an older Cloud ignores what it does not know.
+
+- The add-on sends the building as its pages show it (overview, energy, flats, devices, alerts, the values of the Měření cards) and the layout of its pages. Residence Cloud shows exactly the same pages, read-only.
+- Ekonomika in the Cloud is this Ekonomika: the add-on sends the building's hours with the price list, and the Cloud prices any day, month or year with the add-on's own economics. The flats' own hours stay in the building; the Cloud keeps their days.
+- Measurement problems (a sensor or a flat's meter that sends nothing usable, a sensor mapped wrong) reach the Cloud with the rest of the alerts.
+- *Zpráva pro shromáždění* on a phone: the pages no longer overlap.
+- Lighter pictures: the scenes load ten times faster.
+
 ## 0.8.5
 
 For buildings on Residence Cloud. Solario Cloud has to be updated first; an older Cloud ignores what it does not know.
