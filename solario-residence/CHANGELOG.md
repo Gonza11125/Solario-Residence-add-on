@@ -1,3 +1,12 @@
+## 0.9.1
+
+**The plan with a code from Solario.** Solario Cloud has to be updated first.
+
+- The Tarif page is finished: no more "coming soon". Both plans are switched on with a plan code from Solario, under *Kód tarifu od Solario*.
+- A code is for Residence Local or Residence Cloud and has no end. The first code links the building to Solario Cloud (Solario Admin); later codes change the plan at once, up or down, and the SVJ can enter them too. The Cloud login stays the same.
+- A building whose plan ended comes back with a code and keeps its account and history.
+- The former RESIDENCE PRO keys work as before: they are codes for Residence Cloud.
+
 ## 0.9.0
 
 **Residence Cloud is this interface, from anywhere.** For buildings on Residence Cloud; Solario Cloud has to be updated first, an older Cloud ignores what it does not know.

@@ -71,11 +71,11 @@ The **Tarif** page shows the building's Solario plan. The SVJ and the Solario Ad
 - **Residence Local** — 499 Kč a month. The overview, flats, meters, automations and alerts in the add-on, Solario support and automatic updates. Measurements and operational data stay in the building and are not sent to Solario Cloud.
 - **Residence Cloud** — 999 Kč a month. Everything in Residence Local, plus Solario Residence Cloud on the web: the building's overview from anywhere, history in the Cloud, and access for the committee and the manager by invitation.
 
-Choosing a plan opens the secure payment page; the plan switches on by itself within about a minute of the payment. A move up to Residence Cloud applies at once (only the difference for the rest of the period is charged), a move down to Residence Local and a cancellation at the end of the paid period. **Platební karta a faktury** opens the payment provider's page for the card and the invoices.
+**A plan code from Solario** switches a plan on: Residence Local or Residence Cloud, whichever the code was issued for. It has no end and nothing is charged. Enter it under **Kód tarifu od Solario** on the Tarif page. A building not yet linked to Solario Cloud is linked by the Solario Admin with its first code (on the Tarif page or in Správa); the add-on then shows the access code to Solario Cloud once. After that the SVJ can change the plan with another code too: it applies at once, up or down, and the previous code stops. The Cloud login stays the same.
 
-Without a plan the overview keeps running in the building, but without Solario Cloud, Solario support and automatic updates. A one-time RESIDENCE PRO key, entered by the Solario Admin in Správa, is Residence Cloud without an end.
+Once Solario Cloud sells Residence plans by card, choosing a plan opens the secure payment page; the plan switches on by itself within about a minute of the payment. A move up to Residence Cloud applies at once (only the difference for the rest of the period is charged), a move down to Residence Local and a cancellation at the end of the paid period. **Platební karta a faktury** opens the payment provider's page for the card and the invoices.
 
-Until Solario Cloud starts selling Residence plans, nothing is charged and the add-on runs in full.
+Until then, a building without a plan keeps running in full, with Solario support and automatic updates.
 
 ## Data handling
 
