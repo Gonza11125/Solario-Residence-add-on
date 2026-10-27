@@ -64,6 +64,12 @@ Changes are saved at once and the SVJ sees them on its next refresh.
 
 **Byty** lists the units configured in Residence Studio, their daily consumption and each unit's share of the consumption actually measured by the submeters. Units without a submeter are excluded from that share, so the visible percentages still add up. The economics of each flat — its solar energy, its cost and its saving — are on the **Ekonomika** page and in its CSV export.
 
+## Automatizace
+
+The **Automatizace** page lists the building's Home Assistant automations. For each one made in Home Assistant's editor it says when it starts, on what condition and what it does, and shows the devices it switches with their state and how long they were on today. *Dnes v domě* shows the whole day at a glance; *Co vyžaduje pozornost* lists unavailable devices and automations that are off or have not run for a week. The SVJ reads the page; the Solario Admin can also switch automations on and off and run them. An automation written in YAML without an `id` is listed without its description.
+
+*Kolik automatizace ušetřily* shows the money: this month, today and in total, a chart over 30 days or 12 months, and each automation's share. A device's energy comes from its power sensor (found by its name, or chosen in the card), or from its rated power times the time it was on; the Solario Admin sets either in the automation's card under *Zadat příkon*. The part of that energy the roof supplied is worth what the building no longer buys (the low-tariff price where the building has one, else the price of the hour, from the price list in Ekonomika) less the feed-in price. Without a meter at the grid connection the roof's part is estimated as at most the hour's production, and the page says so. *Ještě nevyužito* is the energy that went to the grid, priced the same way. Finished days are kept in `/data/automation-savings.json`; the days Home Assistant's Recorder still holds (usually ten) are filled in after an update.
+
 ## Tarif
 
 The **Tarif** page shows the building's Solario plan. The SVJ and the Solario Admin both see it and may change it, because the building pays.

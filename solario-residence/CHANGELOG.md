@@ -1,3 +1,16 @@
+## 0.10.0
+
+**Automatizace that say what they do.** For Residence Cloud, Solario Cloud has to be updated first; an older Cloud shows the page as before.
+
+- Each automation says in words when it starts, on what condition and what it does, with the names of the devices it switches (read from its configuration in Home Assistant).
+- The devices it switches, with their state now and how long they were on today.
+- *Dnes v domě*: the day of every automation at a glance, when it started and when its devices were on.
+- *Co vyžaduje pozornost*: a device that is unavailable, an automation Home Assistant no longer reports, one switched off or not run for a week.
+- Filter by what an automation looks after: hot water, cars, heating, lights. The Solario Admin confirms before switching an automation off.
+- **What the automations saved, in crowns.** *Kolik automatizace ušetřily*: this month, today and in total, a chart over 30 days and 12 months, and each automation's share. Each card shows its own savings with a month of days.
+- How it is counted: the energy of each device (from its power sensor, or its rated power times the time it was on, set by the Solario Admin in the card) that came from the roof, at the price the building no longer pays (the low tariff where there is one) less the feed-in price. Without a meter at the grid connection, the roof's part is an estimate and says so.
+- **What is still left**: the energy that went to the grid that month, priced the same way, next to the savings.
+
 ## 0.9.1
 
 **The plan with a code from Solario.** Solario Cloud has to be updated first.
