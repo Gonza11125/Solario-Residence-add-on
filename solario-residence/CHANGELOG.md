@@ -1,3 +1,10 @@
+## 0.11.0
+
+**The SVJ changes the prices from Residence Cloud too.** For the prices from the Cloud, Solario Cloud has to be updated after the add-on.
+
+- In Residence Cloud the SVJ and the Solario Admin set the prices on the Ekonomika page with the same form as here. The add-on takes the change over at its next sync (usually within a minute), checks it with the same rules as its own form, saves it and recalculates the economics. Until then the Cloud says *Čeká na dům*; a change the add-on refuses is shown there with the reason.
+- **A battery with only a power sensor.** Where the battery has no energy counters mapped, the economics read its mean power of each hour from Home Assistant's statistics, so charging the battery no longer counts as the building's consumption. Such a building reads its history again once after the update. The hour running now is completed when Home Assistant closes it.
+
 ## 0.10.0
 
 **Automatizace that say what they do.** For Residence Cloud, Solario Cloud has to be updated first; an older Cloud shows the page as before.
