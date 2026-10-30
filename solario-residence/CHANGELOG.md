@@ -1,3 +1,11 @@
+## 0.11.1
+
+**Automations with one purpose are one card.**
+
+- Automations that look after the same thing (hot water, car charging, heating, lights), or others that switch the same device, are shown as one card: its devices, the day and the savings together, each device counted once, and each automation as a step with what it does and its controls. A building with eight hot water automations now sees one *Ohřev vody*.
+- The Solario Admin can switch to showing them one by one.
+- Residence Cloud: the *Průběh energie* card shows the week, the month and the year from the building's hours, not only today.
+
 ## 0.11.0
 
 **The SVJ changes the prices from Residence Cloud too.** For the prices from the Cloud, Solario Cloud has to be updated after the add-on.
