@@ -1,3 +1,15 @@
+## 0.13.0
+
+**An automation tells what really happened.** For Residence Cloud, Solario Cloud has to be updated too.
+
+- *Ohřev vody dnes*: each time the heater was on today, from when to when, the tank's temperature at the start and the end, and the power it drew; the temperature over the day as a chart with the runs marked; and when it starts heating again, under which conditions.
+- The temperature is the sensor the automations decide by (a numeric condition on the tank's temperature); the power comes from the device's power meter, found by its name or set in *Zadat příkon*.
+- **A broken heater is found.** Switched on and drawing no power for ten minutes, or on for half an hour while the water does not warm up: the card says so in red, the group shows *Zapnuto, ale nehřeje* and it is listed under *Co vyžaduje pozornost*.
+- The group's header says when the heating last started, not only when an automation last ran (one checking every few minutes "ran" even when nothing heated).
+- **Kotelna.** *Správa → Kotelna*: the temperature the water should reach and, if needed, the sensor that measures it (otherwise the one the hot-water automations decide by).
+- **The overview shows the boiler room**: the water's temperature against the target, whether the boilers heat (or one is on and draws nothing), the last heating and **how many kWh went into the boilers today** and this month, with the share from the roof. Overviews already arranged get the card after today's summary; it stays hidden in a building without hot-water automations.
+- *Ohřev vody dnes* draws the target temperature into the chart and says of each finished heating whether the water reached it.
+
 ## 0.12.0
 
 **For buildings that measure only their production.** For Residence Cloud, Solario Cloud has to be updated too; an older Cloud shows the building as before.
