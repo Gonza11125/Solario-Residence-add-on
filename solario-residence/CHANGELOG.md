@@ -1,3 +1,10 @@
+## 0.14.0
+
+**How much went into the boilers, for any period.** For Residence Cloud, Solario Cloud has to be updated too; an older Cloud shows today and this month.
+
+- The *Kotelna* card on Přehled switches between **Dnes, Týden, Měsíc, Rok and Celkem**: the kWh that went into the boilers, the share from the roof and what it saved. Týden is the last 7 days, Měsíc and Rok the current month and year, Celkem everything the add-on has counted (it keeps up to 400 days; the first days are filled in from Home Assistant's Recorder). Each viewer's choice is remembered in their browser.
+- **Temperature in the boiler room**: *Správa → Kotelna* takes a second sensor for the air in the room, shown on the card next to the water's temperature.
+
 ## 0.13.0
 
 **An automation tells what really happened.** For Residence Cloud, Solario Cloud has to be updated too.

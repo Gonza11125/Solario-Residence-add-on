@@ -74,7 +74,7 @@ Each automation shows what its devices did today: every run with its start, end,
 
 ## Kotelna
 
-Under **Správa → Kotelna** the Solario Admin names the boiler room, sets the temperature the hot water should reach and may choose the sensor that measures it (a sensor in °C, a water heater or a thermostat); without one, the sensor the hot-water automations compare is used. The **Kotelna** card on Přehled shows the water's temperature against the target, what each boiler does now, the last heating, a boiler switched on that draws no power, and how many kWh went into the boilers today and this month with the share from the roof. The kWh come from the boilers' power sensors or rated power, as in *Kolik automatizace ušetřily*. On Automatizace the target is drawn into *Ohřev vody dnes*, and each finished heating says whether it reached it.
+Under **Správa → Kotelna** the Solario Admin names the boiler room, sets the temperature the hot water should reach and may choose the sensor that measures it (a sensor in °C, a water heater or a thermostat); without one, the sensor the hot-water automations compare is used. The **Kotelna** card on Přehled shows the water's temperature against the target, what each boiler does now, the last heating, a boiler switched on that draws no power, and how many kWh went into the boilers with the share from the roof and the saving, switchable between today, the last 7 days, this month, this year and everything counted. A second sensor, for the air in the boiler room, shows the room's temperature on the card. The kWh come from the boilers' power sensors or rated power, as in *Kolik automatizace ušetřily*. On Automatizace the target is drawn into *Ohřev vody dnes*, and each finished heating says whether it reached it.
 
 ## Tarif
 
