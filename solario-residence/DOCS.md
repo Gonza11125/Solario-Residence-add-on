@@ -28,6 +28,8 @@ The **Ekonomika** page shows what the building's photovoltaics saved and earned,
 
 Everything is computed hour by hour from Home Assistant's long-term statistics (the Recorder's hourly totals of the mapped energy counters; for a battery mapped only with its power sensor, its mean power of each hour), so it covers the history from the day the installation was commissioned (at most five years back), not only the time since the add-on was installed. The add-on reads the latest month first and then the older history in the background; the page fills in as it goes. Each hour is priced by the price list in force that day, with the high or low tariff by the HDO schedule; an hour split between the two is priced proportionally.
 
+**A building with only its inverter** (no meter at the grid connection and no battery): in **Správa → Měření domu** choose **Jen výroba**, whether the building exports to the grid and its installed power (kWp). The pages then leave out what the building does not measure and show its production, the saving from it and the plan instead. With the export limited to zero the saving is exact; otherwise it is shown as an upper bound ("až").
+
 SVJ and Solario Admin can set electricity prices in **Ekonomika → Nastavit ceny**. This includes dated price lists, purchase and feed-in prices, fixed payments, HDO hours and the price of energy shared with flats. Choose **Uložit ceny** to save them on the add-on and refresh the economics. On Residence Cloud the same form is on the Ekonomika page of the web: the change is sent to the building, which takes it over at its next sync and recalculates; until then the page says *Čeká na dům*.
 
 Solario Admin configures the building model, investment and history in **Správa → Ekonomika domu**:

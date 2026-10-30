@@ -1,3 +1,15 @@
+## 0.12.0
+
+**For buildings that measure only their production.** For Residence Cloud, Solario Cloud has to be updated too; an older Cloud shows the building as before.
+
+- *Správa → Měření domu*: **Plné měření** or **Jen výroba**, for a building with only its inverter (no meter at the grid connection, no battery). The add-on suggests it when the mapping looks like one.
+- In *Jen výroba* the pages leave out consumption, the grid, the battery and the flats' consumption instead of showing empty places, and show what the production tells:
+  - the overview: power now (and as a share of the installed kWp), today's production, today's saving and the day's peak; today and this month against the supplier's plan;
+  - Ekonomika: the saving from the production at the price of each hour, production per kWp, value of a produced kWh, CO₂, the plan, the payback and a report of production and saving;
+  - *Náš dům* and the display in the entrance: what the roof makes now, today, this month and since it started, the saving and CO₂.
+- Whether the building exports to the grid decides how exact the saving is: with the inverter's export limited to zero, the whole production is used in the building and the saving is exact; otherwise it is an upper bound, marked "až".
+- The demo building can be seen this way: open the demo with `?mereni=vyroba`.
+
 ## 0.11.1
 
 **Automations with one purpose are one card.**
