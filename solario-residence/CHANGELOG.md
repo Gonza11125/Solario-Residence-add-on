@@ -1,3 +1,10 @@
+## 0.15.0
+
+**Each boiler apart.** For Residence Cloud, Solario Cloud has to be updated too.
+
+- *Správa → Kotelna → Bojlery*: each boiler with its name, its own thermometer and the elements that heat it. *Přidat B1 a B2 podle čidel* sets them up in one click from sensors named like "TEPLOTA BOJLER B1"; elements left unchecked are found by their names (B1, Bojler 1, TUV 1…).
+- The *Kotelna* card shows the boilers side by side: each one's water against the target, its elements, whether it heats or has a fault, and its last heating. The kWh switch (Dnes, Týden, Měsíc, Rok, Celkem) stays for the whole boiler room; the room's temperature moved to the card's header.
+
 ## 0.14.0
 
 **How much went into the boilers, for any period.** For Residence Cloud, Solario Cloud has to be updated too; an older Cloud shows today and this month.
