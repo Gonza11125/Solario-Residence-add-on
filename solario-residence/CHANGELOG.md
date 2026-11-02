@@ -1,3 +1,11 @@
+## 0.16.0
+
+**Residence Cloud watches the building as Solario Home watches a house.** Solario Cloud has to be updated too.
+
+- The add-on finds each input of the inverter (string, MPPT) by its sensor's name (SolaX, Huawei, GoodWe, Fronius and others) and sends its power with the building's values. Residence Cloud tells the management when one gives a fraction of what the others give while they produce: a fault the whole roof's production hides.
+- In Residence Cloud, *Upozornění* gets the rules of Solario Home: each one on or off, its threshold and how long it must last, to the phone, by e-mail and when it is over, and rules of the management's own on the building's values (production, consumption, grid, battery, the boilers' water, the boiler room's air). New built-in rules: part of the roof not producing, an element switched on and drawing nothing, measurements to fix, cold water in a boiler (off until switched on) and revisions due.
+- *Náš dům* for the residents (the QR code in the entrance) becomes one page of what matters: what to do now (with sharing through EDC switched on: when to run the washing machine on the roof, and the hours it gives most), today, the hot water, whether the management deals with a fault, and the month since the start.
+
 ## 0.15.0
 
 **Each boiler apart.** For Residence Cloud, Solario Cloud has to be updated too.
