@@ -1,3 +1,12 @@
+## 0.17.0
+
+**Clearer for the committee: the answer first, the rest one click away.** Solario Cloud is updated too.
+
+- *Přehled* shows by default six cards instead of fourteen: the building now, today, the alerts, the money, the boiler room and what the Cloud adds. Technology, data sources, revisions and the rest have their own pages; the Solario Admin shows any of them again in *Upravit stránku*.
+- *Ekonomika* shows by default seven cards instead of thirteen: what the building gained, its bill with and without the roof, the gain over time, payback, recommendations, production against the plan and the flats. The flats table shows eight rows and the rest on *Zobrazit všech*. Energy balance, tariff, comparison, records, CO₂ and the daily report are one click away.
+- Pages the Solario Admin already arranged keep their layout.
+- *Upozornění*: only critical alerts and warnings make *Vyžaduje pozornost*; a reminder (a revision coming up) reads *Vše v pořádku, 1 informace pro vás*. Alert titles, texts and times are readable on every screen.
+
 ## 0.16.0
 
 **Residence Cloud watches the building as Solario Home watches a house.** Solario Cloud has to be updated too.

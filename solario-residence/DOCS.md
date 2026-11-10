@@ -55,6 +55,8 @@ Nothing is assumed: without a price list the money stays unavailable, hours with
 
 As Solario Admin, open any page and choose **Upravit stránku**. Every page — Přehled, Energie, Ekonomika, Byty, Automatizace, Zařízení, Analytika and Upozornění — is made of cards:
 
+Přehled and Ekonomika ship with the essentials shown and the rest hidden: Přehled shows the energy flow, today, the alerts, the money, the boiler room and what the Cloud adds; Ekonomika what the building gained, its bill, the gain over time, payback, recommendations, production against the plan and the flats. The hidden cards (technology, data sources, revisions, energy balance, tariff, comparison, records, CO₂, the daily report and others) are shown again with their **Zobrazit** button. A page you arranged keeps its layout.
+
 - **Přidat kartu** opens the card library: energy, economics, flats, devices, alerts, and your own cards — a text for the residents (paragraphs, "- " lists and **bold**), a value of any Home Assistant entity, or a link (https only).
 - Drag a card by its handle or move it with the arrows, set its width (a quarter, half, three quarters or the full row) and its title, open its settings (for example the period of an economics card or the entity of a measurement), hide it, or delete it.
 - **Kdo kartu vidí** keeps a card for the Solario Admin only. The SVJ receives the value of a measured entity only when a card it can see shows it.
