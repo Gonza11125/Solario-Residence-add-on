@@ -53,7 +53,7 @@ Nothing is assumed: without a price list the money stays unavailable, hours with
 
 ## Editing pages
 
-As Solario Admin, open any page and choose **Upravit stránku**. Every page — Přehled, Energie, Ekonomika, Byty, Automatizace, Zařízení, Analytika and Upozornění — is made of cards:
+As Solario Admin, open any page and choose **Upravit stránku**. Every page — Přehled, Energie a analytika, Ekonomika, Byty, Automatizace, Zařízení and Upozornění — is made of cards:
 
 Přehled and Ekonomika ship with the essentials shown and the rest hidden: Přehled shows the energy flow, today, the alerts, the money, the boiler room and what the Cloud adds; Ekonomika what the building gained, its bill, the gain over time, payback, recommendations, production against the plan and the flats. The hidden cards (technology, data sources, revisions, energy balance, tariff, comparison, records, CO₂, the daily report and others) are shown again with their **Zobrazit** button. A page you arranged keeps its layout.
 
@@ -64,13 +64,17 @@ Přehled and Ekonomika ship with the essentials shown and the rest hidden: Přeh
 
 Changes are saved at once and the SVJ sees them on its next refresh.
 
+## Energie a analytika
+
+The page shows the building now (production, consumption, grid and battery), today's course, and in detail for the day, month, year or whole period chosen at the top: production and consumption over time, where the energy went, the comparison with the previous period and last year, each input of the inverter (*Vstupy střídače*, when Home Assistant has the power of each string), the flats today, records, CO₂ and the report by day with CSV export. Until 0.17 this was two pages, Energie and Analytika; an Analytika page the Solario Admin arranged stays in the menu.
+
 ## Units
 
 **Byty** lists the units configured in Residence Studio, their daily consumption and each unit's share of the consumption actually measured by the submeters. Units without a submeter are excluded from that share, so the visible percentages still add up. The economics of each flat — its solar energy, its cost and its saving — are on the **Ekonomika** page and in its CSV export.
 
 ## Automatizace
 
-The **Automatizace** page lists the building's Home Assistant automations. For each one made in Home Assistant's editor it says when it starts, on what condition and what it does, and shows the devices it switches with their state and how long they were on today. *Dnes v domě* shows the whole day at a glance; *Co vyžaduje pozornost* lists unavailable devices and automations that are off or have not run for a week. The SVJ reads the page; the Solario Admin can also switch automations on and off and run them. An automation written in YAML without an `id` is listed without its description.
+The **Automatizace** page lists the building's Home Assistant automations. Each card shows the automation's name, state, problems and devices; **Zobrazit více** opens the rest described below. For each one made in Home Assistant's editor it says when it starts, on what condition and what it does, and shows the devices it switches with their state and how long they were on today. *Dnes v domě* shows the whole day at a glance; *Co vyžaduje pozornost* lists unavailable devices and automations that are off or have not run for a week. The SVJ reads the page; the Solario Admin can also switch automations on and off and run them. An automation written in YAML without an `id` is listed without its description.
 
 Each automation shows what its devices did today: every run with its start, end, the temperature it was meant to change (from the sensor its conditions compare, such as the tank temperature) and the power drawn, the temperature over the day, and when it starts again. A device switched on that draws no power, or water that does not warm up during a run, is shown as a fault. Automations with one purpose (hot water, car charging, heating, lights), or that switch the same device, are shown as one card with each automation as a step; the Solario Admin can show them one by one. *Kolik automatizace ušetřily* shows the money: this month, today and in total, a chart over 30 days or 12 months, and each automation's share. A device's energy comes from its power sensor (found by its name, or chosen in the card), or from its rated power times the time it was on; the Solario Admin sets either in the automation's card under *Zadat příkon*. The part of that energy the roof supplied is worth what the building no longer buys (the low-tariff price where the building has one, else the price of the hour, from the price list in Ekonomika) less the feed-in price. Without a meter at the grid connection the roof's part is estimated as at most the hour's production, and the page says so. *Ještě nevyužito* is the energy that went to the grid, priced the same way. Finished days are kept in `/data/automation-savings.json`; the days Home Assistant's Recorder still holds (usually ten) are filled in after an update.
 

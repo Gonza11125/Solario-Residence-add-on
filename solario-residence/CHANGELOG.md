@@ -1,3 +1,12 @@
+## 0.18.0
+
+**Energie a analytika in one page, automations at a glance.** Solario Cloud is updated too.
+
+- *Energie* and *Analytika* become one page, **Energie a analytika**: the building now, today's course, and for any day, month, year or the whole period production and consumption over time (two new charts: what the building used and what went to the grid; what came from the sun and what from the grid), where the energy went, the comparison with earlier periods and last year, the flats today, records, CO₂ and the report by day with CSV. What Přehled shows is not repeated. Analytika leaves the menu, unless the Solario Admin arranged it.
+- New card **Vstupy střídače**: each input of the inverter now and its share; one that gives much less than the others is shown in red.
+- *Automatizace*: each automation shows its name, state, problems and devices; its heating story, money, steps, controls and history are on **Zobrazit více**.
+- The add-on no longer shows offers of Solario Cloud on its pages; the plans are on *Tarif*.
+
 ## 0.17.0
 
 **Clearer for the committee: the answer first, the rest one click away.** Solario Cloud is updated too.
